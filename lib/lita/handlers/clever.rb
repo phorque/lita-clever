@@ -5,7 +5,7 @@ require 'uri'
 module Lita
   module Handlers
     class Clever < Handler
-      route(%r{^([\w .-_]+)$}i, :clever, command: true, help: {
+      route(/.+/, :clever, command: true, help: {
         'clever' => 'Initializes clever.'
       })
 
