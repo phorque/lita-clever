@@ -1,5 +1,5 @@
 require 'lita'
-require 'clever-api'
+require 'cleverbot-api'
 
 module Lita
   module Handlers
