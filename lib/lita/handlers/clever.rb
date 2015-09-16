@@ -13,7 +13,7 @@ module Lita
       end
 
       def clever(response)
-        @@client ||= Cleverbot.new
+        @@client ||= ::Cleverbot.new
         response.reply CGI.unescapeHTML(@@client.think(response.matches[0][0]))
       end
     end
