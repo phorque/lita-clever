@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-clever'
-  spec.version       = '0.0.9'
+  spec.version       = '0.0.10'
   spec.authors       = ['Francis Hinson']
   spec.email         = ['francis@chesscademy.com']
   spec.description   = %q{A Lita handler for Cleverbot.}
@@ -16,6 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'lita', '>= 2.0'
   spec.add_runtime_dependency 'clever-api', '>= 0.0.2'
+  spec.add_runtime_dependency 'htmlentities', '>= 4.3.3'
 
   spec.add_development_dependency 'bundler', '~> 1.8'
   spec.add_development_dependency 'rspec', '~> 3.2.0'
