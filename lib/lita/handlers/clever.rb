@@ -1,5 +1,5 @@
 require 'lita'
-require 'cleverbot-api'
+require 'cleverbot'
 
 module Lita
   module Handlers
@@ -12,8 +12,8 @@ module Lita
       end
 
       def clever(response)
-        bot = CleverBot.new
-        response.reply bot.think response.matches[0][0]
+        @@client ||= Cleverbot::Client.new
+        response.reply @@client.write(response.matches[0][0])
       end
     end
 
